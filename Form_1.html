@@ -1,0 +1,97 @@
+<!-- https://github.com/nidhiseta -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_1</title>
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data">
+
+
+<fieldset>
+    <legend align = "left">From Data</legend> 
+
+    <label for="uname">User Name</label>
+    <!-- autocomplete mean of You search on amazone and serch mobole you give recommention -->
+    <!-- placeholder = you give hint -->
+    <input type="text" id="uname" name="uname" autofocus autocomplete="autocomplete" placeholder="Enter Username"/> <br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" value="a@gmail.com" readonly placeholder="Enter Email"/> <br><br>
+
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" maxlength="8" /> <br><br>
+
+
+    <label>Gender
+        <input type="radio" name="gender" value="male"/> Male
+        <input type="radio" name="gender" value="female"/> Female<br><br>
+    </label>
+
+
+    <label> Area Of Intrest      
+        <input type="checkbox" name="Subject" value="dbms"/> DBMS
+        <input type="checkbox" name="Subject" value="fsd"/> FSD
+        <input type="checkbox" name="Subject" value="python"/> PYTHON
+    </label><br><br>
+
+    <label> Age
+        <!-- step mean choose 2 2 num i.e 2,4,6, choose -->
+        <input type="range" name="age" min="18" max="30" step="2" value=" " oninput="num.value=this.value"/> 
+        <input type="text" id="num" disabled/><br><br>
+
+        Choose Number  <input type="number" min="0" max="20" name="Quantity"/> <br><br>        
+    </label>
+
+
+    <label> Date Picker
+        <input type="date" name="dob" id="datepicker" min="2024-10-01"/>
+    </label> <br><br>
+
+    <!-- Both are Differnt -->
+    <!-- <textarea name="comment" rows="6" cols="20">Enter Your Comments</textarea> -->
+    <label>Comment
+        <textarea name="comment" rows="6" cols="20" placeholder="Enter Your Comments"></textarea><br><br>
+    </label>
+
+    <label>File
+        <input type="file" name="file" multiple/> <br><br>
+    </label>
+        
+    <label>Department
+        <select name="Department">
+            <!-- selected hidden disabled three option 
+            1.selected= show "Select Department"
+            2. hidden = not Show "Select Department"
+            3. disabled = Bid-Difolt choose first -->
+            <option value="" selected>Select Department</option>
+
+            <optgroup label="CE">
+                <option value="CSE">CSE</option>
+                <option value="CST">CST</option>
+                <option value="CSD">CSD</option>
+            </optgroup>
+
+            <optgroup label="Mech">
+                <option value="CSD">CSD</option>
+                <option value="CSM">CSM</option>
+            </optgroup>
+        </select>
+    </label> <br><br>
+
+<!-- image -->
+    <label> Image
+        <input type="image" src="india-img.png" alt="submit btn" width="150" height="100"/><br><br>
+        <input type="submit" value="Click here to submit"/><br><br>
+        <input type="reset" value="reset">
+    </label> <br><br>
+
+    <input type="submit" value="Submit"/>
+</fieldset>
+</form>
+
+</body>
+</html>
