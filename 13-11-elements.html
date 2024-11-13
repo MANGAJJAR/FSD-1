@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elements</title>
+    <style>
+        p::first-line {
+            color: red;
+            font-weight: bolder;
+            text-transform: capitalize;
+            font-size: 28px;
+            text-decoration: underline;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-size: 60px;
+        }
+
+        h2::before {
+            content: url("./meme.png");
+        }
+
+        h2::after {
+            content: " Keep Enjoy";
+        }
+
+
+        .ul1 li::marker {
+            font-size: 30px;
+            color: rgb(255, 0, 0);
+        }
+
+        .ul1 li {
+            font-size: 25px;
+            color: rgb(0, 0, 255);
+        }
+
+        .ul2 li::marker {
+            content: "#";
+            color: #00ff00;
+            font-size: 30px;
+        }
+
+        ::selection {
+            color: aqua;
+            background-color: blueviolet;
+        }
+
+        .u2 li::selection {
+            background-color: rgb(205, 50, 50);
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello my name is man gajjar</p>
+    <p>FSD is my fav Subject</p>
+    <h4>This is Noraml tags</h4>
+    <h2>IShowSpped</h2>
+
+    <ul class="ul1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScrite</li>
+    </ul>
+    <ul class="ul2">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScrite</li>
+    </ul>
+
+
+</body>
+
+</html>
