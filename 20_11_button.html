@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .btn {
+            height: 30px;
+            width: 80px;
+            cursor: progress;
+        }
+
+        #image {
+            display: none;
+        }
+
+        /*  cursor:zoom-in
+        wait
+        none
+        grab
+        not-allowed
+        progress
+        alias
+        pointer
+        zoom-in
+        zoom-out*/
+    </style>
+</head>
+
+<body>
+    <a class="btn" target="_blank" onclick="display()">Click Me</a>
+    <img src="kanye.jfif" alt="" id="image">
+</body>
+<script>
+    var num = 0
+    function display() {
+        if (num % 2 == 0) {
+            document.getElementById("image").style.display = "block";
+            num++;
+            console.log(num)
+        }
+        else {
+            num++;
+            document.getElementById("image").style.display = "none";
+            console.log(num)
+        }
+    }
+</script>
+
+</html>

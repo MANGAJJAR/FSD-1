@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animation</title>
+    <style>
+        /*From = 0%
+        to = 100%*/
+        @keyframes example {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+
+        .d1 {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="d1">GOOD DAY</div>
+
+</body>
+
+</html>

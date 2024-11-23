@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation </title>
+    <style>
+        @keyframes example {
+            0%{
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: rgb(200, 255, 0);
+                top: 0px;
+                left: 300px;
+            }
+            50%{
+                background-color: rgb(68, 0, 255);
+                top: 300px;
+                left: 300px;
+            }
+            75%{
+                background-color: rgb(255, 0, 212);
+                top: 300px;
+                left: 0px;
+            }
+            100%{
+                background-color: rgb(22, 100, 145);
+                top: 0px;
+                left: 0px;
+            }
+        }
+        .d1 {
+            padding-left: 75px;
+            padding-top: 75px;
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 15s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal; 
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1"><img src="kanye.jfif" alt=""></div>
+</body>
+</html>
