@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Qurey</title>
+    <style>
+        ul li {
+            text-align: right;
+            float: right;
+            list-style: none;
+            padding: 10px;
+            display: block;
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+
+        @media (max-width: 650px) {
+            ul li {
+                float: none;
+                text-align: center;
+            }
+
+            .i2 {
+                display: none;
+            }
+
+            .i1 {
+                display: block;
+            }
+           
+        }
+        .i1 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">content</a></li>
+    </ul>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima atque minus fugiat temporibus eius!
+        Atque tenetur, quod nesciunt totam illo ullam dolores dolore ipsum voluptatem ipsa, rem optio,
+        architecto rerum.</h2>
+    <img class="i1" src="kanye.jfif" alt="#">
+    <img class="i2" src="meme.png" alt="">
+</body>
+
+</html>

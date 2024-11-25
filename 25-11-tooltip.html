@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <title>Tooltip</title>
+    <style>
+        .tooltip {
+            display: inline-block;
+            border: 3px double red;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .tooltiptxt {
+            visibility: hidden;
+            width: 150px;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            position: absolute;
+        }
+
+        .tooltip:hover .tooltiptxt {
+            visibility: visible;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tooltip">CSS <span class="tooltiptxt">Cascading Style Sheet</span></div>
+
+</body>
+
+</html>
