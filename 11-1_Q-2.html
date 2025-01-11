@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p onmousedown="md(this)" onmouseup="mu(this)" onmouseover="mo(this)">Mouse Event</p>
+
+    <script>
+        function cl() {
+            document.getElementById("i1").DOCUMENT_POSITION_CONTAINED_BY.color = "red";
+        }
+        function md(e) {
+            e.style.backgroundColor = "pink";
+            var d1 = new Date();
+            document.write(d1.getDate(), "/");
+            document.write(d1.getMonth() + 1, "/");
+            document.write(d1.getFullYear(), "\n");
+            document.write(d1.getHours(), ":");
+            document.write(d1.getMinutes(), ":");
+            document.write(d1.getSeconds());
+        }
+        function mu(e) {
+            e.style.backgroundColor = "green";
+        }
+        function mo(e) {
+            e.style.backgroundColor = "yellow";
+        }
+
+    </script>
+</body>
+
+</html>

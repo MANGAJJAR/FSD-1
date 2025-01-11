@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="f1" onsubmit="fun1()">
+        <input type="text" name="t1" id="i1">
+        <input type="password">
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function fun1() {
+
+            var obj1 = document.forms["f1"]["t1"].value;
+            console.log(obj1);
+            var obj2 = document.f1.t1.value;
+            console.log(obj2);
+            var obj3 = document.getElementById("i1").value;
+            console.log(obj3);
+        }
+    </script>
+
+</body>
+
+</html>

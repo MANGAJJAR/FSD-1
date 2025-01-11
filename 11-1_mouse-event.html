@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+
+<body style="height: 100vh;">
+    <script>
+        function fun(e) {
+            var val = e.button;
+
+            if (val == 0) {
+                alert("Left Button is clicked")
+            } else if (val == 1) {
+                alert("Middle Button is clicked")
+            } else {
+                alert("Right Button is clicked")
+            }
+        }
+    </script>
+
+    <div style="height: 50%; width: 50%; border: 5px solid" onmousedown="fun(event)">
+        Click Me
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="os()">
+        <input type="text" name="un" id="uname" onchange="oc()" onfocus="of()" onblur="ob()" oninput="oi()"
+            value="hello" />
+        <input type="submit">
+    </form>
+
+    <script>
+        var f1 = document.getElementById('uname');
+        function of() {
+            f1.style.color = "green";
+            f1.style.backgroundColor = "yellow"
+        }
+        function ob() {
+            f1.style.textTransform = "uppercase";
+            f1.style.color = "blue";
+        }
+        function oi() {
+            f1.style.backgroundColor = "cyan"
+        }
+        function oc() {
+            f1.style.backgroundColor = "red"
+        }
+        function os() {
+            var v = f1.value;
+            alert("Welcome " + v)
+        }
+    </script>
+</body>
+
+</html>
