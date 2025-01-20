@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script language="javascript" type="text/javascript">
+        document.writeln("hello");
+        console.log("hi");
+    </script> -->
+    <script src="main.js"></script>
+
+    <script>
+        function warn() {
+            alert("This is Warning Msg!!");
+            document.write("Warning");
+        }
+
+        function conf() {
+            res = confirm("Do you want to continue");
+            if (res === true) {
+                document.write("Yes");
+                return true;
+            } else {
+                document.write("No");
+                return false;
+            }
+        }
+
+        // prompt use to input data
+        function getval() {
+            var res1 = prompt("Enter Your Name: ", "ABC")
+            document.write("Welcome " + res1)
+        }
+
+        console.log(Math.sqrt(16))
+        console.log(Math.abs(-20))
+        console.log(Math.ceil(1.4))
+        console.log(Math.ceil(-1.4))
+        console.log(Math.floor(1.7))
+        console.log(Math.floor(-1.7))
+        console.log(Math.pow(3, 2))
+        console.log(Math.max(3, 5, 6.1, 4, 4))
+        console.log(Math.min(4, 3, 1))
+
+        // A-Z = 65-90
+        // a-z = 97-122
+        // 0-9 = 48-57
+
+        x = "hello"
+        text = "Hello world, Welocme"
+        y = "Wrold"
+        x1 = "this is demo"
+        y1 = "is"
+        console.log(text.charAt(11));
+        console.log(x.charCodeAt(0))
+        console.log(x.concat(y))
+        console.log(x.replace("hell", y))
+        console.log(x.split("l"))
+        console.log(x1.split(" "))
+        console.log(x1.substr(2, 5))
+        console.log(x1.substring(2, 6))
+        console.log(x.toUpperCase())
+        console.log(x.toLowerCase())
+        console.log(x.indexOf("e"))
+        console.log(x.lastIndexOf("l"))
+        console.log(x.lastIndexOf(y1))
+        //012345
+        a = "ajanta"
+        console.log(a.substr(1, 4))
+
+        var d1 = new Date();
+        console.log(d1);
+        console.log(d1.getDay());
+        console.log(d1.getMonth());
+        console.log(d1.getDate());
+        console.log(d1.getFullYear());
+        console.log(d1.getHours());
+        console.log(d1.getMinutes());
+        console.log(d1.getSeconds());
+        console.log(d1.setDate(14));
+        console.log(d1.setMonth(0));
+
+        // Date
+        function days(data1, data2) {
+            var od = 24 * 60 * 60 * 1000;
+            var d1_ms = data1.getTime();
+            var d2_ms = data2.getTime();
+            var diff = Math.abs(d1_ms - d2_ms);
+            return (Math.round(diff / od));
+        }
+
+        function display() {
+            var d = prompt("Enter Date")
+            var m = prompt("Enter Month")
+            var y = prompt("Enter Year")
+            var d1 = new Date();
+            var d2 = new Date();
+            d1.setDate(d);
+            d1.setMonth(m);
+            var cy = d2.getFullYear();
+            if (y >= cy) {
+                d1.setFullYear(y);
+            } else {
+                alert("Invalid Year :(")
+            }
+            document.write(days(d1, d2));
+        }
+
+
+        //count code
+        function count(str, letter) {
+            let c = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (str.charAt(i) == letter) {
+                    c += 1;
+                }
+            }
+            return c;
+        }
+        console.log(count("School", "o"));
+
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="ok" onclick="warn()"><br><br>
+    <input type="button" value="confirm" onclick="conf()"><br><br>
+    <input type="button" value="Get Value" onclick="getval()"> <br>
+    <h4>Enter a Futrue date</h4>
+    <input type="button" value="Date" onclick="display()">
+</body>
+
+</html>

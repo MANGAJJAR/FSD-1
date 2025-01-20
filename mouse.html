@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+</head>
+
+<body>
+    <h1 onclick="cl()">Hello</h1>
+    <p onmousedown="md(this)" onmouseup="mu(this)" onmouseover="mo(this)" onmouseout="mout(this)">Mouse Event</p>
+
+    <script>
+        function cl() {
+            document.getElementById("i1").DOCUMENT_POSITION_CONTAINED_BY.color = "red";
+        }
+        function md(e) {
+            e.style.backgroundColor = "pink";
+
+        }
+        function mu(e) {
+            e.style.color = "green";
+            e.style.fontSize = "30px"
+        }
+        function mo(e) {
+            e.style.backgroundColor = "yellow";
+        }
+        function mout(e) {
+            e.style.backgroundColor = "blue";
+        }
+    </script>
+
+    <!-- e.innerHTML = "Text Changed"; in 
+        function md(e) {
+            e.style.backgroundColor = "pink";   
+        } 
+        -->
+</body>
+
+</html>

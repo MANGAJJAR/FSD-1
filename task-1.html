@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Username: <input id="i1"> <br> <br>
+    passwrod: <input id="p1"> <br> <br>
+    <input type="submit" onclick="fun(event)">
+
+    <script>
+        function fun(e) {
+            pat1 = /^_|^@|^\d/;
+            pat2 = /\W+/;
+
+            un = document.getElementById("i1").value;
+            pass = document.getElementById("p1").value;
+
+            if (un == " " || pass == " ") {
+                alert("Plz Enter value")
+            } else if (pat1.test(un)) {
+                alert("Must not start")
+            } else if (pat1.test(pass)) {
+                alert("Atleast one Special Char")
+            } else if (pass.length < 6 || pass.length > 12) {
+                alert("invalid passwrod")
+            } else {
+                alert("Welcome " + un)
+            }
+        }
+    </script>
+</body>
+
+</html>

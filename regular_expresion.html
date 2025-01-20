@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="i1">
+    <input type="submit" onclick="fun(event)">
+
+    <!-- pat = /abc/i ignote case(A,a are same),
+          pat = /^abc$/i last ma abc hoy to valid,
+          pat = /[^abc]/ abc thi biju pan jose 
+          pat = /[abc]/ atlest a,b or c on hovo joi
+          pat = /CO*/i; O OR MORE   
+          pat = /CO+/i; CO hova joi (cool work, cat not wrok)
+          pat = /[0-9]/; allow number
+          pat = /^[0-9]$/ allow only one number
+          pat = /^[0-9]+$/ allow only number
+          pat = /^[0-9]{10}$/; allow only 10 number
+          pat = /^[A-Z]{5,8}$/; ALLOW ONLY CAPITAL AND MIN 5 OR MAX 8 WORD
+          pat = /^[a-z]{5,8}$/; ALLOW ONLY samll AND MIN 5 OR MAX 8 WORD
+          pat = /^[A-Za-z]{5,8}$/; ALLOW small and big AND MIN 5 OR MAX 8 WORD
+          pat = /\w/ allow digit
+          pat = /\w/ allow all A-Z,a-z,0-9 
+          pat = /\W/ allow all special car.
+        -->
+    <script>
+        function fun(e) {
+            e.preventDefault();
+            pat = /^[A-Za-z]{5,8}$/;
+            un = document.getElementById("i1").value;
+
+            if (pat.test(un)) {
+                alert("Valid")
+            } else {
+                alert("Invalid")
+            }
+        }
+    </script>
+</body>
+
+</html>

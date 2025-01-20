@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Username:
+    <input id="i1"> <br>
+    <input type="submit" onclick="fun(event)">
+
+    <script>
+        function fun(e) {
+            e.preventDefault();
+            pat = /^\W+/;
+            un = document.getElementById("i1").value;
+
+            if (pat.test(un)) {
+                alert("Invalid")
+            } else {
+                alert("Valid")
+            }
+        }
+    </script>
+</body>
+
+</html>

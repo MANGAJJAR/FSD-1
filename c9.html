@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 9</title>
+
+    <style>
+        .c2 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p id="p1">Hello</p>
+    <h1 class="c1"></h1>
+    <p class="c1">Test</p>
+    <button onclick="demo()">Click Here</button>
+
+    <script>
+        function demo() {
+            var cn = document.getElementsByTagName("p");
+            for (i = 0; i < cn.length; i++) {
+                cn[i].style.backgroundColor = "pink"
+                cn[i].style.color = "green"
+            }
+
+            var cn = document.getElementsByClassName("c1");
+            for (i = 0; i < cn.length; i++) {
+                cn[i].style.FontSize = "30px"
+                cn[i].style.textTransform = "capatilize"
+                cn[i].innerHTML = "This is test"
+            }
+
+            var d1 = document.getElementById("p1");
+            d1.innerHTML = "Testing Text";
+            d1.style.color = "red";
+            d1.style.backgroundColor = "yellow";
+            d1.tittle = "demo";
+            d1.setAttribute("class", "c2");
+        }
+    </script>
+</body>
+
+</html>
