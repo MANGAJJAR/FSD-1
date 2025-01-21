@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entries</title>
+</head>
+
+<body>
+    <!-- <script>
+        const a = ["a", "b", "c"]
+        for ([i, e] of a.entries()) {
+            console.log(i, e)
+        }
+    </script> -->
+    <!-- <script>
+        // a = index, b=value
+        arr = [10, 20, 30, 40, 50]
+        let sum = 0
+        for ([a, b] of arr.entries()) {
+            sum += (a % 10);
+        }
+        console.log(sum)
+    </script> -->
+
+    <!-- <script>
+        // a = index, b=value
+        arr = [1, 2, 3, 4, 5, 6, 7, 8]
+        let sum = 0
+        for ([a, b] of arr.entries()) {
+            if (a % 2 == 1) {
+                sum = sum + b
+            }
+            console.log(sum)
+        }
+    </script> -->
+    <!-- <script>
+        map1 = new Map();
+        map1.set("ABC", "faculity", "hello")
+        map1.set("XYZ", "Admin", "hello2")
+        console.log(map1);
+    </script> -->
+    <!-- <script>
+        map2 = new Map([["ABC", "faculity"], ["XYZ", "Admin"]]);
+        console.log(map2);
+    </script> -->
+
+    <!-- <script>
+        map2 = new Map([["ABC1", "faculity"], ["XYZ", "Admin"]]);
+        // Last added
+        map2.set("par", "HR")
+        console.log(map2);
+
+        // delete value ABC1 value and data
+        map2.delete("ABC1")
+        console.log(map2);
+
+        // Last added
+        map2.set("ABC", "faculity")
+        console.log(map2);
+
+        // Update value
+        map2.set("ABC", "HOD")
+        console.log(map2);
+    </script> -->
+
+    <!-- <script>
+        // endsWith count 1,2,3..
+        // startsWith count 0,1,2,3..
+        s = "this is demo"
+        console.log(s.startsWith("this"))      //true
+        console.log(s.startsWith("this", 8))   //false
+        console.log(s.startsWith("demo", 4))   //false
+
+        console.log(s.endsWith("demo", 12))    //true
+        console.log(s.endsWith("is"))          //false
+        console.log(s.endsWith("is", 6))       //false
+        console.log(s.endsWith("demo"))        //true
+        console.log(s.endsWith("this", 4))     //true
+        console.log(s.endsWith("is", 4))       //true
+        console.log(s.endsWith("mo"))          //true
+
+        console.log(s.includes("is"))          //true
+        console.log(s.includes("is", 6))       //false
+
+    </script> -->
+
+
+    <!-- <script>
+        class dis {
+            constructor() {
+                this.name = "LJU"
+            }
+        }
+        const d = new dis()
+        console.log(d.name)
+    </script> -->
+
+    <!-- <script>
+        class person {
+            constructor(n, a) {
+                this.name = n
+                this.age = a
+            }
+            getname() {
+                console.log(this.age)
+                return this.name
+            }
+        }
+        obj = new person("ABC", 22)
+        console.log(obj.getname())
+    </script> -->
+
+    <script>
+        // distance cal between 2 point
+        class point {
+            constructor(x, y, z) {
+                this.x = x;
+                this.y = y;
+                this.z = z;
+            }
+            dist = (p2) => {
+                let ans = Math.pow((p2.x - p1.x), 2) +
+                    Math.pow((p2.y - p1.y), 2) +
+                    Math.pow((p2.z - p1.z), 2)
+                let dis = Math.sqrt(ans);
+                return dis;
+            }
+        }
+        p1 = new point(4, 4, 4);
+        p2 = new point(5, 5, 5);
+        console.log(p1.dist(p2))
+    </script>
+
+    <!-- <script>
+        class Point {
+            constructor(x, y, z) {
+                this.x = x;
+                this.y = y;
+                this.z = z;
+            }
+            dist(p2) {
+                // Using 'this' to refer to the current object (p1) and 'p2' for the other point.
+                let ans = Math.pow((p2.x - this.x), 2) +
+                    Math.pow((p2.y - this.y), 2) +
+                    Math.pow((p2.z - this.z), 2);
+                let dis = Math.sqrt(ans);
+                return dis;
+            }
+        }
+        let p1 = new Point(4, 4, 4);
+        let p2 = new Point(5, 5, 5);
+        console.log(p1.dist(p2));
+    </script> -->
+</body>
+
+</html>
